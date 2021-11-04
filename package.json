@@ -1,0 +1,19 @@
+{
+  "name": "sea-of-monsters",
+  "version": "1.0.1",
+  "description": "A choose-your-own-adventure for a book report.",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecoder08/sea-of-monsters.git"
+  },
+  "author": "thecoder08",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thecoder08/sea-of-monsters/issues"
+  },
+  "homepage": "https://github.com/thecoder08/sea-of-monsters#readme"
+}
