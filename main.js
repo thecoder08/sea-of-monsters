@@ -11,7 +11,7 @@ process.stdin.on('data', function(data) {
     process.stdout.write('Y/N: ');
     input = 'school';
   }
-  if (input == 'school') {
+  else if (input == 'school') {
     if (data.toString() == ('Y' + require('os').EOL)) {
       console.log('You walk to school.');
       process.exit();
