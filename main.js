@@ -35,7 +35,7 @@ process.stdin.on('data', function(data) {
     if (data.toString() == ('Y' + require('os').EOL)) {
       console.log('You uncap your pen which transforms into a giant sword made out of celestial steel. You swing at the bullies, but it just passes through them. Celestial weapons cannot hurt mortals.');
       console.log('Regardless, they get scared. They can\'t see magical things because of the Mist. You don\'t know what they saw but it sure must have been scary. They run away.');
-      console.log('You have gym class now, and your class is playing dodgeball. Do you sit out?');
+      console.log('You have gym class now, and your class is playing dodgeball. Do you participate?');
       process.stdout.write('Y/N: ');
       input = 'dodgeball';
     }
