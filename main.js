@@ -113,7 +113,7 @@ process.stdin.on('data', function(data) {
   }
   else if (input == 'getin') {
     if (data.toString() == ('Y' + require('os').EOL)) {
-      console.log('In the car are three ladies. Two are bind, and one has one eye. They all share the vision from that eye.');
+      console.log('In the car are three ladies. Two are blind, and one has one eye. They all share the vision from that eye.');
       console.log('The eye falls out of the socket and into your lap.');
       console.log('Do you give the eye back?');
       process.stdout.write('Y/N: ');
