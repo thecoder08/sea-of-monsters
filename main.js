@@ -41,7 +41,7 @@ process.stdin.on('data', function(data) {
     }
     else if (data.toString() == ('N' + require('os').EOL)) {
       console.log('You tell the bullies off instead. They chuckle and insult you but they go away and do something else.');
-      console.log('You have gym class now, and your class is playing dodgeball. Do you sit out?');
+      console.log('You have gym class now, and your class is playing dodgeball. Do you participate?');
       process.stdout.write('Y/N: ');
       input = 'dodgeball';
     }
