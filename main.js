@@ -5,7 +5,7 @@ console.log('Welcome to the Game!');
 process.stdout.write('Type something to start: ');
 process.stdin.on('data', function(data) {
   if (input == 'start') {
-    console.log('Your name is Percy (Perceus) Jackson. You live in Manhattan with your mom. You\'ve been kicked out of numerous boarding schools, and are currently attending Meriwether College Prep. You are a half-blood: a half-human, half-god. You dad is Posiedon, the greek god of water, and during the summer you attend camp half-blood, a summer camp for half-bloods.');
+    console.log('Your name is Percy (Perceus) Jackson. You live in Manhattan with your mom. You\'ve been kicked out of numerous boarding schools, and are currently attending Meriwether College Prep. You are a half-blood: a half-human, half-god. You dad is Posiedon, the greek god of the sea, and during the summer you attend camp half-blood, a summer camp for half-bloods.');
     console.log('You have known this for a year. During your previous year at camp, you made some friends: Grover, a satyr (half goat half human), and Annabeth, a fellow half-blood that wants to be an architect. Her mother is Athena, the greek goddess of wisdom.');
     console.log('Your goal is to get to camp. This will be challenging because you will try to be stopped and killed by monsters!');
     console.log('Do you attend school today?');
@@ -51,6 +51,101 @@ process.stdin.on('data', function(data) {
     }
   }
   else if (input == 'dodgeball') {
-    process.exit();
+    if (data.toString() == ('Y' + require('os').EOL)) {
+      console.log('You start playing dodgeball. Unfortunately, the bullies are the captains and they put all the wimpy kids as well as Tyson on your team, and themselves on the other.');
+      console.log('One of the bullies throws an extremely fast ball at you. If it hit you, you surely would have died! They others throw more.');
+      console.log('Slowly, the bullies grow and grow, until they become two storeys high! They are Laistrigonian Giants!');
+      console.log('Do you attack with your sword?');
+      process.stdout.write('Y/N: ');
+      input = 'fightback';
+    }
+    else if (data.toString() == ('N' + require('os').EOL)) {
+      console.log('You sit in the corner. Unfortunately, the bullies are the captains and they put all the wimpy kids as well as Tyson on your team, and themselves on the other.');
+      console.log('One of the bullies throws an extremely fast ball at you. If it hit you, you surely would have died! They others throw more.');
+      console.log('Slowly, the bullies grow and grow, until they become two storeys high! They are Laistrigonian Giants!');
+      console.log('Do you attack with your sword?');
+      process.stdout.write('Y/N: ');
+      input = 'fightback';
+    }
+    else {
+      console.log('Type Y or N.');
+      process.stdout.write('Y/N: ');
+    }
+  }
+  else if (input == 'fightback') {
+    if (data.toString() == ('Y' + require('os').EOL)) {
+      console.log('You attack one of the giants. Then, out of no where, comes your friend Annabeth. She helps you take down the rest.');
+      console.log('"Come on, Seaweed Brain!" she says. That\'s the nickname she came up with for you.');
+      console.log('Do you follow Annabeth?');
+      process.stdout.write('Y/N: ');
+      input = 'follow';
+    }
+    else if (data.toString() == ('N' + require('os').EOL)) {
+      console.log('You stand there in shock. Then, out of no where, comes your friend Annabeth. She defeats the giants easily.');
+      console.log('"Don\'t just stand there, Seaweed Brain, come on!" she says. That\'s the nickname she came up with for you.');
+      console.log('Do you follow Annabeth?');
+      process.stdout.write('Y/N: ');
+      input = 'follow';
+    }
+    else {
+      console.log('Type Y or N.');
+      process.stdout.write('Y/N: ');
+    }
+  }
+  else if (input == 'follow') {
+    if (data.toString() == ('Y' + require('os').EOL)) {
+      console.log('Annabeth takes you out to the street. The school administrators suspect that your were responsible for the disaster, so they try to chase you. Annabeth then throws a Golden Drachma onto the street and prays to the god Hades.');
+      console.log('A car appears, and Annabeth gets in without hesitation.');
+      console.log('Do you get in the strange car?');
+      process.stdout.write('Y/N: ');
+      input = 'getin';
+    }
+    else if (data.toString() == ('N' + require('os').EOL)) {
+      console.log('Annabeth is becoming impatient.');
+      console.log('"Come on, Seaweed Brain!" she says.');
+      console.log('Do you follow Annabeth?');
+      process.stdout.write('Y/N: ');
+    }
+    else {
+      console.log('Type Y or N.');
+      process.stdout.write('Y/N: ');
+    }
+  }
+  else if (input == 'getin') {
+    if (data.toString() == ('Y' + require('os').EOL)) {
+      console.log('In the car are three ladies. Two are bind, and one has one eye. They all share the vision from that eye.');
+      console.log('The eye falls out of the socket and into your lap.');
+      console.log('Do you give the eye back?');
+      process.stdout.write('Y/N: ');
+      input = 'eye';
+    }
+    else if (data.toString() == ('N' + require('os').EOL)) {
+      console.log('The school administrators catch up with you. They take you into custody and arrest you.');
+      console.log('BAD ENDING: too slow');
+      console.log('There are other endings to explore!');
+      process.exit();
+    }
+    else {
+      console.log('Type Y or N.');
+      process.stdout.write('Y/N: ');
+    }
+  }
+  else if (input == 'eye') {
+    if (data.toString() == ('Y' + require('os').EOL)) {
+      console.log('Annabeth tells the ladies to go to camp half blood. You arrive safely.');
+      console.log('GOOD ENDING: you made it to camp safely');
+      console.log('There are other endings to explore!');
+      process.exit();
+    }
+    else if (data.toString() == ('N' + require('os').EOL)) {
+      console.log('Because the drivers can\'t see, they crash the car and everyone dies.');
+      console.log('BAD ENDING: died in a car crash');
+      console.log('There are other endings to explore!');
+      process.exit();
+    }
+    else {
+      console.log('Type Y or N.');
+      process.stdout.write('Y/N: ');
+    }
   }
 });
