@@ -23,8 +23,8 @@ jobs:
       - name: Upload Windows build
         uses: actions/upload-artifact@v2
         with:
-          name: sea-of-monsters-windows.exe
-          path: sea-of-monsters-windows.exe
+          name: sea-of-monsters-win.exe
+          path: sea-of-monsters-win.exe
 
       - name: Upload Linux build
         uses: actions/upload-artifact@v2
